@@ -1,0 +1,171 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+/*colour scheme*/
+:root{
+    --main-green: #586354;
+    --muted-red: #892d47;
+    --dark-yellow: #DBB26D;
+    --off-white: #E1CFCB;
+}
+
+body {
+    background-color: var(--dark-yellow);
+}
+ 
+header{
+    height: 45px;
+    background-color: var(--dark-yellow);
+}
+/*navbar styling*/
+
+nav ul li {
+  display: inline;
+  text-decoration: none;
+  margin-right: 15px;
+  color: var(--main-green);
+  
+}
+#navbar {
+  position: fixed;
+  top: 5px;
+  right: 0;
+  
+  
+}
+nav ul {
+    margin-right: 15px
+           
+}
+nav a {
+    /*color: #AE1B47;*/
+    color: black;
+    font-size: 1.2rem
+}
+
+nav a:hover {
+    color: var(--muted-red);
+}
+
+/*welcome section*/
+#welcome-section {
+    background: url("https://cdn.pixabay.com/photo/2015/05/25/14/29/tea-783352_1280.jpg") center center;
+    background-size: cover;
+    height: 100vh;   
+}
+
+#welcome-section h1 {
+    padding-top: 10px;
+    font-family: 'Salsa', cursive;
+    font-size: 3rem;
+    color: var(--main-green);
+    text-align: center;
+}
+    
+ /*projects section*/   
+#projects {
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+
+.project-tile {
+    border: 1px solid black;
+    background-color: var(--off-white);
+    padding: 10px;
+    flex-basis: 30%;
+    
+    
+}
+
+.project-tile img {
+    width: 100%;  
+}
+
+.project-tile a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.project-tile a:hover {
+    color: var(--muted-red);
+}
+    
+
+
+
+
+/*contacts section*/
+#footer {
+    min-height: 70px;
+    background-color: var(--muted-red);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+          
+}
+
+#footer a {
+    font-size: 1.2rem;
+    color: var(--dark-yellow);
+}
+
+#footer a:hover{
+    color: var(--off-white);
+}
+
+@media only screen and (max-width: 600px){
+    #welcome-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    
+}
+    
+
+
+
+
+
+/*media query for mobile devices*/
+@media only screen and (max-width: 380px) {
+    #welcome-section {
+        background:  Url("https://cdn.pixabay.com/photo/2013/08/20/15/47/poppies-174276_1280.jpg") center center;
+        
+    }
+    #welcome-section h1{
+        font-size: 1.8rem;
+    }
+    
+    nav a {
+        color: black;
+        font-size: 1rem;
+    }
+    nav ul {
+        margin-right: 0;
+    }
+    
+    #projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-tile{
+        min-width: 70%;
+    }
+    
+    
+}
+
+
+
+
